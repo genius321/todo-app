@@ -44,6 +44,7 @@ POST localhost:8000/auth/sign-up
     "password": "qwerty"
 }
 ```
+```
 POST localhost:8000/auth/sign-in
 ```
 в raw в формате JSON
@@ -53,9 +54,8 @@ POST localhost:8000/auth/sign-in
     "password": "qwerty"
 }
 ```
-Тут в ответе будет токен, его нужно будет использовать везде дальше
-Во всех следующих командах
-в Authorithation выбрать Bearer Token скопировать в поле token полученный token
+Тут в ответе будет токен, его нужно будет использовать везде дальше. Во всех следующих командах
+в Authorithation выбрать Bearer Token, скопировать в поле token полученный token
 ```
 POST localhost:8000/api/lists
 ```
@@ -93,7 +93,6 @@ POST localhost:8000/api/lists/1/items
 ```
 ```
 GET localhost:8000/api/lists/1/items
-```
 ```
 ```
 PUT localhost:8000/api/items/1
